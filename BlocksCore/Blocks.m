@@ -11,6 +11,7 @@ Sar                                              = ReadSar(Command.sarFileName);
 Segment                                          = ReadSegmentTri(Command.segFileName); % Read segment file
 if isfield(Command, 'mshpFileName')
    if ~isempty(Command.mshpFileName)
+       fprintf(Command.mshpFileName)
       [Patches, Command]                         = ReadMshp(Command.mshpFileName, Command);
    end
 else
